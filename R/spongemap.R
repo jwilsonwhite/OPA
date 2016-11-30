@@ -1,0 +1,27 @@
+#' Map of sponges on Conch Reef, Florida Keys
+#' 
+#' A spatial dataset of class \code{"ppp"} containing the locations and radii of giant barrel sponges (\emph{Xestospongia muta}) on Conch Reef, Florida Keys. 
+#' Data were extracted from digital photo-mosaics assembled from photographs taken 2 m above the reef surface in June 2012 (Gleason et al. 2007, Lirman et al. 2007). 
+#' The study area was a 16 m diameter circular plot; this is Conch Reef plot AQS3. Image analysis software was used to estimate the \eqn{x, y} coordinate
+#' of the center of each giant barrel sponge and its perimeter. Perimeters were then converted to radii, assuming sponges are approximately circular 
+#' when viewed from overhead. Objects of class \code{"ppp"} are essentially data frames; the variables are as follows:
+#' 
+#' \itemize{
+#' \item \code{x}. \emph{x}-coordinate of each sponge in meters (distance from center of plot)
+#' \item \code{y}. \emph{y}-coordinate of each sponge in meters (distance from center of plot)
+#' \item \code{marks}. radius of each sponge in meters
+#' }
+#' 
+#'
+#' @docType data
+#' @keywords datasets
+#' @name spongemap
+#' @usage data(spongemap)
+#' @format A data frame with 52 rows and 3 variables
+#' @references 
+#' \href{http://onlinelibrary.wiley.com/doi/10.1111/j.1439-0485.2006.00140.x/full}{Gleason ACR, et al. (2007) Documenting hurricane impacts on coral reefs using two-dimensional video-mosaic technology. Marine Ecology 28:254-258}
+#'  
+#' \href{http://link.springer.com/article/10.1007/s10661-006-9239-0}{Lirman D, et al. (2007) Development and application of a video-mosaic survey technology to document the status of coral reef communities. Environmental Monitoring and Asessment 125:59-37} 
+
+#' @source Diegnan LK, Pawlik JR, Gleason ACR, White JW. "Object Pattern Analysis: an extension of Ripley's \eqn{K} to two-dimensional objects." Submitted, Methods in Ecology & Evolution 
+NULL
