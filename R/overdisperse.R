@@ -17,7 +17,10 @@
 
 overdisperse <- function(Input,Mindist=0){
   N <- sum(Input) # total number of points in Input landscape
-  Y <- matrix(rep(1:dim(Input)[2],times=dim(Input)[1]),nrow=dim(Input)[1],ncol=dim(Input)[2])
+  if (class(Input)=="matrix"){ # if a matrix
+    Dim = dim(Input)
+  }else{Dim = c(length(Input),1)} # if a numeric vector
+  Y <- matrix(rep(1:Dim[1],times=Dim[2]),nrow=Dim[1],ncol=Dim[2])
   X <- t(Y)
   # Distance matrix:
   Q <- dist( cbind(matrix(X,nrow=prod(dim(X))), matrix(Y,nrow=prod(dim(Y)))),diag=TRUE,upper=TRUE)
@@ -54,7 +57,7 @@ overdisperse <- function(Input,Mindist=0){
   # format output matrix
   Out <- rep(0,dim(Q)[1])
   Out[OKrows] = 1
-  Out = matrix(Out,dim(Input)[1],dim(Input)[2])
+  Out = matrix(Out,Dim[1],Dim[2])
   Out
 } # end function
   

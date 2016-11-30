@@ -105,7 +105,7 @@ if (Type == 'circle'){
   X <- X[OK]
   Y <- Y[OK]
   R <- R[OK]
-  P<-ppp(X,Y,marks=R,window=disc(radius=maxR/2))
+  P<-ppp(X,Y,marks=R,window=disc(radius=res/2))
 }else{ # if a rectangle
 P<-ppp(X,Y,marks=R,xrange=c(0,res),yrange=c(0,res))
 } 

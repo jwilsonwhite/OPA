@@ -54,6 +54,6 @@ Will White, \email{whitejw@uncw.edu}
 \href{http://onlinelibrary.wiley.com/doi/10.1111/j.0030-1299.2004.12497.x/full}{Wiegand and Moloney 2004}, Diegnan LK, Pawlik JR, Gleason ACR, White JW. "Object Pattern Analysis: an extension of Ripley's \eqn{K} to two-dimensional objects." Submitted, Methods in Ecology & Evolution
 }
 \seealso{
-\code{\link{sim.autocorr}},  \code{\link{random.landscape}}, \code{\link[spatstat]{spatstat::Kest}}, \code{\link[spatstat]{spatstat::ppp.object}}
+\code{\link{sim.autocorr}},  \code{\link{random.landscape}}, \code{\link[spatstat]{Kest}}, \code{\link[spatstat]{ppp.object}}
 }
 
